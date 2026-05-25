@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Новини та статті організації СМА Разом — останні події, досягнення та корисна інформація." />
+  <title>Новини — СМА Разом</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="СМА Разом" />
+          <div class="nav-logo-text">
+            СМА Разом
+            <span>Громадська організація</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="sma.html">Що таке СМА</a></li>
+          <li><a href="news.html" class="current">Новини</a></li>
+          <li><a href="gallery.html">Фотогалерея</a></li>
+          <li><a href="useful.html">Корисне</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+      <div class="social-links">
+        <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+      </div>
+        <button class="nav-burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <a href="about.html">Про нас</a>
+    <a href="sma.html">Що таке СМА</a>
+    <a href="news.html">Новини</a>
+    <a href="gallery.html">Фотогалерея</a>
+    <a href="useful.html">Корисне</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="index.html">Головна</a>
+            <span><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            <span>Новини</span>
+          </div>
+          <div class="page-hero-tag">
+            <i class="fa-solid fa-newspaper"></i>&nbsp; Публікації
+          </div>
+          <h1>Новини та статті</h1>
+          <p class="page-hero-lead">
+            Актуальна інформація про нашу діяльність, досягнення у лікуванні СМА, події та важливі зміни для пацієнтів в Україні.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED NEWS -->
+    <section class="news-featured">
+      <div class="container">
+        <a href="single-post.html" class="featured-card" data-aos>
+          <div class="featured-card-img">
+            <!-- <img src="images/news-featured.jpg" alt="..."> -->
+            <div class="featured-img-placeholder">
+              <i class="fa-solid fa-newspaper fa-3x"></i>
+            </div>
+          </div>
+          <div class="featured-card-body">
+            <div class="featured-card-meta">
+              <span class="news-cat news-cat--important">Важлива новина</span>
+              <span class="news-date"><i class="fa-regular fa-calendar"></i> 15 квітня 2025</span>
+              <span class="news-read-time"><i class="fa-regular fa-clock"></i> 5 хв читання</span>
+            </div>
+            <h2 class="featured-card-title">
+              Нова програма забезпечення терапією для пацієнтів зі СМА в Україні: що змінилося у 2025 році
+            </h2>
+            <p class="featured-card-text">
+              МОЗ України оголосило про розширення програми закупівлі препаратів для лікування спінальної м'язової атрофії. Завдяки спільним зусиллям пацієнтських організацій вдалося досягти значного прогресу — кількість пацієнтів, які отримують терапію за державний кошт, зросла вдвічі порівняно з минулим роком.
+            </p>
+            <span class="featured-card-link">
+              Читати повністю <i class="fa-solid fa-arrow-right"></i>
+            </span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- MAIN CONTENT: GRID + SIDEBAR -->
+    <section class="news-main">
+      <div class="container">
+        <div class="news-layout">
+
+          <!-- LEFT: Filters + Grid -->
+          <div class="news-content">
+
+            <!-- Filters -->
+            <div class="news-filters" data-aos>
+              <button class="filter-btn active" data-filter="all">Всі</button>
+              <button class="filter-btn" data-filter="news">Новини</button>
+              <button class="filter-btn" data-filter="event">Події</button>
+              <button class="filter-btn" data-filter="medical">Лікування</button>
+              <button class="filter-btn" data-filter="advocacy">Адвокація</button>
+              <button class="filter-btn" data-filter="family">Для родин</button>
+            </div>
+
+            <!-- News Grid -->
+            <div class="news-grid-list" id="newsGrid">
+
+              <article class="news-item" data-category="medical" data-aos>
+                <a href="single-post.html" class="news-item-img">
+                  <!-- <img src="images/news-1.jpg" alt="..."> -->
+                  <div class="news-item-img-placeholder">💊</div>
+                  <span class="news-item-cat news-cat--medical">Лікування</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 10 квітня 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 4 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Генна терапія Zolgensma: що потрібно знати українським родинам у 2025 році</a>
+                  </h3>
+                  <p class="news-item-excerpt">Розповідаємо про можливості доступу до найдорожчого препарату у світі для дітей зі СМА типу 1 в Україні та за кордоном.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="event" data-aos data-aos-delay="100">
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">🎗️</div>
+                  <span class="news-item-cat news-cat--event">Подія</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 3 квітня 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 2 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Конференція «СМА: Разом до перемоги — 2025» відбудеться у червні в Києві</a>
+                  </h3>
+                  <p class="news-item-excerpt">Щорічна зустріч пацієнтів, лікарів та волонтерів. Реєстрація відкрита для всіх охочих.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="advocacy" data-aos data-aos-delay="200">
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">⚖️</div>
+                  <span class="news-item-cat news-cat--advocacy">Адвокація</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 28 березня 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 6 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Відкритий лист до МОЗ щодо розширення програми закупівель рісдиплам</a>
+                  </h3>
+                  <p class="news-item-excerpt">СМА Разом разом з іншими пацієнтськими організаціями підписали звернення до міністерства охорони здоров'я.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="family" data-aos>
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">👨‍👩‍👧</div>
+                  <span class="news-item-cat news-cat--family">Для родин</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 20 березня 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 7 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Як оформити групу інвалідності дитині зі СМА: покрокова інструкція</a>
+                  </h3>
+                  <p class="news-item-excerpt">Детальний гайд з усіма документами, строками та підводними каменями, які варто знати кожній родині.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="news" data-aos data-aos-delay="100">
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">📰</div>
+                  <span class="news-item-cat news-cat--news">Новини</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 15 березня 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 3 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">СМА Разом увійшла до ради European SMA Alliance</a>
+                  </h3>
+                  <p class="news-item-excerpt">Наша організація отримала місце у керівному органі найбільшої європейської мережі пацієнтських організацій зі СМА.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="medical" data-aos data-aos-delay="200">
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">🔬</div>
+                  <span class="news-item-cat news-cat--medical">Лікування</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 5 березня 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 8 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Нові дослідження ефективності рісдиплам: огляд для пацієнтів</a>
+                  </h3>
+                  <p class="news-item-excerpt">Публікуємо адаптований для широкої аудиторії огляд останніх клінічних досліджень препарату Evrysdi.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="event" data-aos>
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">📸</div>
+                  <span class="news-item-cat news-cat--event">Подія</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 20 лютого 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 3 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">День рідкісних захворювань 2025: як ми відзначили разом</a>
+                  </h3>
+                  <p class="news-item-excerpt">28 лютого — Міжнародний день рідкісних захворювань. Фотозвіт з нашого заходу у Києві.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="advocacy" data-aos data-aos-delay="100">
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">🏛️</div>
+                  <span class="news-item-cat news-cat--advocacy">Адвокація</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 10 лютого 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 5 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Зустріч з народними депутатами щодо неонатального скринінгу на СМА</a>
+                  </h3>
+                  <p class="news-item-excerpt">Представники СМА Разом зустрілися з членами Комітету ВРУ з питань охорони здоров'я.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+              <article class="news-item" data-category="family" data-aos data-aos-delay="200">
+                <a href="single-post.html" class="news-item-img">
+                  <div class="news-item-img-placeholder">💙</div>
+                  <span class="news-item-cat news-cat--family">Для родин</span>
+                </a>
+                <div class="news-item-body">
+                  <div class="news-item-meta">
+                    <span><i class="fa-regular fa-calendar"></i> 1 лютого 2025</span>
+                    <span><i class="fa-regular fa-clock"></i> 6 хв</span>
+                  </div>
+                  <h3 class="news-item-title">
+                    <a href="single-post.html">Психологічна підтримка для батьків: де шукати допомогу в Україні</a>
+                  </h3>
+                  <p class="news-item-excerpt">Список безкоштовних та доступних ресурсів психологічної підтримки для родин, які виховують дітей зі СМА.</p>
+                  <a href="single-post.html" class="news-item-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+                </div>
+              </article>
+
+            </div><!-- /newsGrid -->
+
+            <!-- No results -->
+            <div class="news-no-results" id="noResults" style="display:none;">
+              <i class="fa-regular fa-face-sad-tear fa-2x"></i>
+              <p>За цією категорією публікацій не знайдено.</p>
+            </div>
+
+            <!-- Pagination -->
+            <div class="pagination" id="pagination" data-aos>
+              <button class="page-btn page-prev" disabled>
+                <i class="fa-solid fa-arrow-left"></i>
+              </button>
+              <button class="page-num active">1</button>
+              <button class="page-num">2</button>
+              <button class="page-num">3</button>
+              <span class="page-dots">…</span>
+              <button class="page-num">8</button>
+              <button class="page-btn page-next">
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+
+          </div><!-- /news-content -->
+        </div><!-- /news-layout -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="СМА Разом" />
+            <div class="footer-logo-name">СМА Разом</div>
+          </div>
+          <p class="footer-desc">Громадська організація, що підтримує пацієнтів зі спінальною м'язовою атрофією та їхні родини в Україні.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Навігація</div>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="sma.html">Що таке СМА</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="useful.html">Корисне</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Контакти</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@sma-razom.org.ua">info@sma-razom.org.ua</a></li>
+            <li><a href="tel:+380441234567">+38 (044) 123-45-67</a></li>
+            <li style="color:rgba(255,255,255,0.35)">м. Київ</li>
+            <li style="color:rgba(255,255,255,0.35)">Пн–Пт: 09:00–18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024–2025 СМА Разом. Всі права захищені.</span>
+        <div style="display:flex;gap:20px">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Публічна оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Вгору"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script ></script>
+</body>
+</html>

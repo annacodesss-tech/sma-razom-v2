@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="СМА Разом — громадська організація підтримки людей зі спінальною м'язовою атрофією в Україні. Допомога, інформація, спільнота." />
+  <title>СМА Разом — Громадська організація</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <!-- Font Awesome для іконок -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- ==========================================
+       HEADER / NAV
+       ========================================== -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="nav-logo">
+          <img src="images/logo.png" alt="СМА Разом" />
+          <div class="nav-logo-text">
+            СМА Разом
+            <span>Громадська організація</span>
+          </div>
+        </a>
+
+        <ul class="nav-links">
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="sma.html">Що таке СМА</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html">Фотогалерея</a></li>
+          <li><a href="useful.html">Корисне</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <button class="nav-burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <button class="mobile-menu-close" aria-label="Закрити">&times;</button>
+
+    <div class="social-links">
+      <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+
+    <a href="about.html">Про нас</a>
+    <a href="sma.html">Що таке СМА</a>
+    <a href="news.html">Новини</a>
+    <a href="gallery.html">Фотогалерея</a>
+    <a href="useful.html">Корисне</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+
+  <main>
+
+    <!-- ==========================================
+         HERO
+         ========================================== -->
+    <section class="hero" id="hero">
+      <div class="container">
+        <div class="hero-inner">
+          <div class="hero-content">
+            <div class="hero-tag">
+              <i class="fa-solid fa-ribbon"></i>&nbsp; Громадська організація України
+            </div>
+            <h1>
+              Разом ми<br>
+              <em>сильніші</em> за<br>
+              хворобу
+            </h1>
+            <p class="hero-lead">
+              СМА Разом — організація, що об'єднує пацієнтів зі спінальною м'язовою атрофією, їх родини та фахівців. Ми боремося за доступ до лікування, підтримуємо сім'ї та підвищуємо обізнаність.
+            </p>
+            <div class="hero-actions">
+              <a href="#contact" class="btn btn-gold">
+                <i class="fa-solid fa-heart"></i> Зв'язатися з нами
+              </a>
+              <a href="about.html" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">
+                Дізнатись більше
+              </a>
+            </div>
+            <div class="hero-stats">
+              <div>
+                <div class="hero-stat-num" data-count="100" data-suffix="+">100+</div>
+                <div class="hero-stat-label">людей у нашій спільноті</div>
+              </div>
+              <div>
+                <div class="hero-stat-num" data-count="1" data-suffix="">1</div>
+                <div class="hero-stat-label">рік роботи</div>
+              </div>
+              <div>
+                <div class="hero-stat-num" data-count="50" data-suffix="+">50+</div>
+                <div class="hero-stat-label">пацієнтів отримали допомогу</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="hero-logo-wrap">
+              <img src="images/logo.png" alt="СМА Разом" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         ABOUT
+         ========================================== -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-inner">
+          <div class="about-img-wrap" data-aos>
+            <div class="about-img-main">
+              <!-- Замініть на реальне фото команди або захода -->
+              <div class="about-img-placeholder">
+                <svg width="64" height="64" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+                    d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                </svg>
+                Додайте фото команди або заходу
+              </div>
+            </div>
+            <!--
+              <div class="about-badge">
+                <div class="about-badge-num">2025</div>
+                <div class="about-badge-text">рік заснування</div>
+            </div>
+            -->
+          </div>
+
+          <div class="about-text">
+            <div class="section-tag" data-aos>Про організацію</div>
+            <h2 class="section-title" data-aos data-aos-delay="100">
+              Ми поруч із кожною родиною
+            </h2>
+            <p class="section-lead" data-aos data-aos-delay="200">
+              СМА Разом — це громадська організація, яка об'єднує пацієнтів зі спінальною м'язовою атрофією та їхні родини. Ми надаємо підтримку, боремось за доступ до інноваційного лікування та будуємо сильну спільноту.
+            </p>
+            <p class="section-lead" style="margin-top: 14px;" data-aos data-aos-delay="300">
+              Наша місія — зробити так, щоб кожна людина зі СМА в Україні мала однакові можливості для повноцінного та гідного життя.
+            </p>
+
+            <div class="about-values" data-aos data-aos-delay="400">
+              <div class="about-value">
+                <div class="about-value-icon">🤝</div>
+                <div class="about-value-title">Підтримка</div>
+                <div class="about-value-text">Психологічна та юридична допомога родинам</div>
+              </div>
+              <div class="about-value">
+                <div class="about-value-icon">⚖️</div>
+                <div class="about-value-title">Адвокація</div>
+                <div class="about-value-text">Захист прав пацієнтів на державному рівні</div>
+              </div>
+              <div class="about-value">
+                <div class="about-value-icon">💊</div>
+                <div class="about-value-title">Лікування</div>
+                <div class="about-value-text">Допомога у доступі до терапії</div>
+              </div>
+              <div class="about-value">
+                <div class="about-value-icon">📣</div>
+                <div class="about-value-title">Обізнаність</div>
+                <div class="about-value-text">Підвищення поінформованості суспільства</div>
+              </div>
+            </div>
+
+            <div style="margin-top: 32px;" data-aos>
+              <a href="about.html" class="btn btn-primary">
+                Читати більше про нас <i class="fa-solid fa-arrow-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         WHAT IS SMA
+         ========================================== -->
+    <section class="sma" id="sma">
+      <div class="container">
+        <div class="sma-header">
+          <div class="section-tag" data-aos>Медична інформація</div>
+          <h2 class="section-title" data-aos data-aos-delay="100">Що таке СМА?</h2>
+          <p class="section-lead" data-aos data-aos-delay="200">
+            Спінальна м'язова атрофія (СМА) — рідкісне генетичне захворювання, яке уражає нервові клітини та призводить до прогресуючої м'язової слабкості. Раннє виявлення та лікування критично важливе.
+          </p>
+        </div>
+
+        <div class="sma-grid">
+          <div class="sma-card" data-aos>
+            <div class="sma-card-icon">🧬</div>
+            <div class="sma-card-title">Генетична причина</div>
+            <div class="sma-card-text">
+              СМА спричинена мутацією в гені SMN1, який відповідає за виробництво білка, необхідного для виживання рухових нейронів спинного мозку.
+            </div>
+          </div>
+          <div class="sma-card" data-aos data-aos-delay="100">
+            <div class="sma-card-icon">📊</div>
+            <div class="sma-card-title">Поширеність</div>
+            <div class="sma-card-text">
+              1 із приблизно 6 000–10 000 новонароджених має СМА. В Україні, за оцінками, налічується кілька сотень пацієнтів різного віку.
+            </div>
+          </div>
+          <div class="sma-card" data-aos data-aos-delay="200">
+            <div class="sma-card-icon">🔬</div>
+            <div class="sma-card-title">Сучасне лікування</div>
+            <div class="sma-card-text">
+              Сьогодні існують ефективні методи лікування — генна терапія та таргетні препарати, які здатні суттєво сповільнити або зупинити прогресування хвороби.
+            </div>
+          </div>
+        </div>
+
+        <div class="sma-types" data-aos>
+          <div class="sma-types-title">Типи СМА</div>
+          <div class="sma-types-grid">
+            <div class="sma-type">
+              <div class="sma-type-num">Тип 0</div>
+              <div class="sma-type-name">Пренатальний</div>
+              <div class="sma-type-desc">Найважча форма, симптоми з'являються до народження</div>
+            </div>
+            <div class="sma-type">
+              <div class="sma-type-num">Тип 1</div>
+              <div class="sma-type-name">Верднига-Гофмана</div>
+              <div class="sma-type-desc">Симптоми до 6 місяців, потребує ШВЛ</div>
+            </div>
+            <div class="sma-type">
+              <div class="sma-type-num">Тип 2</div>
+              <div class="sma-type-name">Проміжний</div>
+              <div class="sma-type-desc">Симптоми від 6 до 18 місяців, дитина може сидіти</div>
+            </div>
+            <div class="sma-type">
+              <div class="sma-type-num">Тип 3</div>
+              <div class="sma-type-name">Кугельберга-Веландер</div>
+              <div class="sma-type-desc">Після 18 місяців, зберігається можливість ходити</div>
+            </div>
+            <div class="sma-type">
+              <div class="sma-type-num">Тип 4</div>
+              <div class="sma-type-name">доросла форма</div>
+              <div class="sma-type-desc">Розвивається у дорослому віці, зберігається здатність ходити протягом усього життя</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         NEWS
+         ========================================== -->
+    <section class="news" id="news">
+      <div class="container">
+        <div class="news-header">
+          <div>
+            <div class="section-tag" data-aos>Останні публікації</div>
+            <h2 class="section-title" data-aos data-aos-delay="100">Новини та статті</h2>
+          </div>
+          <a href="news.html" class="btn btn-outline" data-aos>
+            Всі новини <i class="fa-solid fa-arrow-right"></i>
+          </a>
+        </div>
+
+        <div class="news-grid">
+          <!-- Картка 1 — велика (featured) -->
+          <div class="news-card featured" data-aos>
+            <div class="news-card-img">
+              <!-- Замініть на <img src="..." alt="..."> -->
+              📰
+            </div>
+            <div class="news-card-body">
+              <div class="news-card-cat">Важлива новина</div>
+              <h3 class="news-card-title">
+                Нова програма забезпечення терапією для пацієнтів зі СМА в Україні
+              </h3>
+              <p class="news-card-text">
+                МОЗ України оголосило про розширення програми закупівлі препаратів для лікування спінальної м'язової атрофії. Завдяки спільним зусиллям пацієнтських організацій вдалося домогтися значного прогресу.
+              </p>
+              <div class="news-card-meta">
+                <span>15 квітня 2025</span>
+                <a href="#" class="news-card-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Картка 2 -->
+          <div class="news-card" data-aos data-aos-delay="100">
+            <div class="news-card-img">🎗️</div>
+            <div class="news-card-body">
+              <div class="news-card-cat">Захід</div>
+              <h3 class="news-card-title">Конференція «СМА: Разом до перемоги» — 2025</h3>
+              <p class="news-card-text">
+                Щорічна зустріч пацієнтів, лікарів та волонтерів відбудеться у червні 2025 року в Києві.
+              </p>
+              <div class="news-card-meta">
+                <span>3 березня 2025</span>
+                <a href="#" class="news-card-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Картка 3 -->
+          <div class="news-card" data-aos data-aos-delay="200">
+            <div class="news-card-img">💊</div>
+            <div class="news-card-body">
+              <div class="news-card-cat">Лікування</div>
+              <h3 class="news-card-title">Генна терапія: що потрібно знати родинам?</h3>
+              <p class="news-card-text">
+                Розповідаємо про сучасні методи лікування СМА та як отримати до них доступ в Україні.
+              </p>
+              <div class="news-card-meta">
+                <span>20 лютого 2025</span>
+                <a href="#" class="news-card-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         GALLERY
+         ========================================== -->
+    <section class="gallery" id="gallery">
+      <div class="container">
+        <div class="gallery-header">
+          <div class="section-tag" data-aos>Наше життя</div>
+          <h2 class="section-title" data-aos data-aos-delay="100">Фотогалерея</h2>
+          <p class="section-lead" style="margin: 0 auto;" data-aos data-aos-delay="200">
+            Миті з наших заходів, зустрічей та спільних перемог
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Для кожного елемента замініть вміст на <img src="..." alt="..."> -->
+          <div class="gallery-item" data-aos>
+            <div class="gallery-item-placeholder">
+              <i class="fa-solid fa-image fa-2x"></i>
+              Додайте фото
+            </div>
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-aos data-aos-delay="100">
+            <div class="gallery-item-placeholder">
+              <i class="fa-solid fa-image fa-2x"></i>
+              Додайте фото
+            </div>
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-aos data-aos-delay="200">
+            <div class="gallery-item-placeholder">
+              <i class="fa-solid fa-image fa-2x"></i>
+              Додайте фото
+            </div>
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-aos data-aos-delay="300">
+            <div class="gallery-item-placeholder">
+              <i class="fa-solid fa-image fa-2x"></i>
+              Додайте фото
+            </div>
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-aos data-aos-delay="100">
+            <div class="gallery-item-placeholder">
+              <i class="fa-solid fa-image fa-2x"></i>
+              Додайте фото
+            </div>
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+          <div class="gallery-item" data-aos data-aos-delay="200">
+            <div class="gallery-item-placeholder">
+              <i class="fa-solid fa-image fa-2x"></i>
+              Додайте фото
+            </div>
+            <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i></div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 40px;" data-aos>
+          <a href="#" class="btn btn-outline">
+            Більше фото <i class="fa-solid fa-images"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================
+         DONATE
+
+          <section class="donate" id="donate">
+      <div class="container">
+        <div class="donate-inner">
+          <div data-aos>
+            <div class="hero-tag" style="margin-bottom: 20px;">
+              <i class="fa-solid fa-hand-holding-heart"></i>&nbsp; Долучитися
+            </div>
+            <h2>
+              Ваша підтримка<br>
+              <em>рятує життя</em>
+            </h2>
+            <p class="donate-lead">
+              Кожна гривня наближає нас до мети — забезпечити кожну дитину зі СМА в Україні доступом до лікування. Ваша допомога важлива, незалежно від суми.
+            </p>
+            <div class="donate-actions">
+              <a href="#" class="btn btn-gold">
+                <i class="fa-solid fa-heart"></i> Задонатити зараз
+              </a>
+              <a href="#contact" class="btn btn-outline" style="border-color: rgba(255,255,255,0.4); color: white;">
+                Інші способи допомогти
+              </a>
+            </div>
+          </div>
+
+          <div class="donate-ways" data-aos data-aos-delay="200">
+            <div class="donate-way">
+              <div class="donate-way-icon">💳</div>
+              <div>
+                <div class="donate-way-title">Онлайн-переказ</div>
+                <div class="donate-way-text">Швидко та безпечно через картку будь-якого банку</div>
+              </div>
+            </div>
+            <div class="donate-way">
+              <div class="donate-way-icon">🏦</div>
+              <div>
+                <div class="donate-way-title">Банківський переказ</div>
+                <div class="donate-way-text">Реквізити для юридичних та фізичних осіб</div>
+              </div>
+            </div>
+            <div class="donate-way">
+              <div class="donate-way-icon">📱</div>
+              <div>
+                <div class="donate-way-title">Monobank / Приват</div>
+                <div class="donate-way-text">Переказ через мобільний банк за номером картки</div>
+              </div>
+            </div>
+            <div class="donate-way">
+              <div class="donate-way-icon">🤲</div>
+              <div>
+                <div class="donate-way-title">Волонтерство</div>
+                <div class="donate-way-text">Долучайтесь до нашої команди — ваш час теж допомагає</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+         ========================================== -->
+
+    <!-- ==========================================
+         CONTACT
+         ========================================== -->
+    <section class="contact" id="contact">
+      <div class="container">
+        <div style="text-align: center; margin-bottom: 56px;">
+          <div class="section-tag" data-aos>Будемо на зв'язку</div>
+          <h2 class="section-title" data-aos data-aos-delay="100">Контакти</h2>
+          <p class="section-lead" style="margin: 0 auto;" data-aos data-aos-delay="200">
+            Маєте питання або хочете долучитися до нашої спільноти? Ми завжди раді допомогти.
+          </p>
+        </div>
+
+        <div class="contact-inner">
+          <div class="contact-info" data-aos>
+            <div class="contact-item">
+              <div class="contact-icon">📧</div>
+              <div>
+                <div class="contact-label">Email</div>
+                <div class="contact-val">
+                  <a href="mailto:info@sma-razom.org.ua">info@sma-razom.org.ua</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">📞</div>
+              <div>
+                <div class="contact-label">Телефон</div>
+                <div class="contact-val">
+                  <a href="tel:+380441234567">+38 (044) 123-45-67</a>
+                </div>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-icon">🕐</div>
+              <div>
+                <div class="contact-label">Години роботи</div>
+                <div class="contact-val">Пн–Пт: 09:00 – 18:00</div>
+              </div>
+            </div>
+
+            <div>
+              <div class="contact-label" style="margin-bottom: 12px;">Соціальні мережі</div>
+              <div class="social-links">
+                <a href="#" class="social-link" title="Facebook">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="#" class="social-link" title="Instagram">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="#" class="social-link" title="Telegram">
+                  <i class="fa-brands fa-telegram"></i>
+                </a>
+                <a href="#" class="social-link" title="YouTube">
+                  <i class="fa-brands fa-youtube"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form" data-aos data-aos-delay="200">
+            <h3>Написати нам</h3>
+            <form>
+              <div class="form-group">
+                <label for="name">Ваше ім'я</label>
+                <input type="text" id="name" name="name" placeholder="Марія Іваненко" required />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="email@example.com" required />
+              </div>
+              <div class="form-group">
+                <label for="subject">Тема</label>
+                <select id="subject" name="subject">
+                  <option value="">Оберіть тему</option>
+                  <option>Потребую підтримки / консультації</option>
+                  <option>Хочу стати волонтером</option>
+                  <option>Питання щодо лікування</option>
+                  <option>Партнерство / ЗМІ</option>
+                  <option>Інше</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Повідомлення</label>
+                <textarea id="message" name="message" placeholder="Ваше повідомлення..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">
+                <i class="fa-solid fa-paper-plane"></i> Надіслати повідомлення
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==========================================
+       FOOTER
+       ========================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="СМА Разом" />
+            <div class="footer-logo-name">СМА Разом</div>
+          </div>
+          <p class="footer-desc">
+            Громадська організація, що підтримує пацієнтів зі спінальною м'язовою атрофією та їхні родини в Україні. Ми поруч кожен день.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Навігація</div>
+          <ul class="footer-links">
+            <li><a href="/about.html">Про нас</a></li>
+            <li><a href="/sma.html">Що таке СМА</a></li>
+            <li><a href="/news.html">Новини</a></li>
+            <li><a href="/gallery.html">Фотогалерея</a></li>
+            <li><a href="/useful.html">Корисне</a></li>
+            <li><a href="/contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <div class="footer-col-title">Контакти</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@sma-razom.org.ua">info@sma-razom.org.ua</a></li>
+            <li><a href="tel:+380441234567">+38 (044) 123-45-67</a></li>
+            <li style="color: rgba(255,255,255,0.35);">м. Київ</li>
+            <li style="color: rgba(255,255,255,0.35);">Пн–Пт: 09:00–18:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024–2025 СМА Разом. Всі права захищені.</span>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Публічна оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top button -->
+  <button class="scroll-top" aria-label="Вгору">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

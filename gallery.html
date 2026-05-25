@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Фотогалерея СМА Разом — фото з наших заходів, зустрічей та спільних перемог." />
+  <title>Фотогалерея — СМА Разом</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/gallery.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER — як на index.html -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="СМА Разом" />
+          <div class="nav-logo-text">
+            СМА Разом
+            <span>Громадська організація</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="sma.html">Що таке СМА</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html" class="current">Фотогалерея</a></li>
+          <li><a href="useful.html">Корисне</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <button class="nav-burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <a href="about.html">Про нас</a>
+    <a href="sma.html">Що таке СМА</a>
+    <a href="news.html">Новини</a>
+    <a href="gallery.html">Фотогалерея</a>
+    <a href="useful.html">Корисне</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="index.html">Головна</a>
+            <span><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            <span>Фотогалерея</span>
+          </div>
+          <div class="page-hero-tag">
+            <i class="fa-solid fa-images"></i>&nbsp; Наше життя
+          </div>
+          <h1>Фотогалерея</h1>
+          <p class="page-hero-lead">
+            Миті з наших заходів, зустрічей, конференцій та спільних перемог — все найважливіше у фото.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SLIDER -->
+    <section class="gallery-slider-section">
+      <div class="container">
+        <div class="section-tag" data-aos>Головні моменти</div>
+        <h2 class="section-title" data-aos>Яскраві події</h2>
+      </div>
+
+      <div class="slider-wrap" data-aos>
+        <div class="slider-track" id="sliderTrack">
+
+          <!-- Слайд 1 -->
+          <div class="slide">
+            <div class="slide-img">
+              <!--
+                Замініть на реальне фото:
+                <img src="images/gallery/slide-1.jpg" alt="День рідкісних захворювань 2025" />
+              -->
+              <div class="slide-placeholder"><i class="fa-solid fa-image fa-3x"></i></div>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Подія</span>
+              <div class="slide-title">День рідкісних захворювань 2025</div>
+              <div class="slide-date"><i class="fa-regular fa-calendar"></i> 28 лютого 2025</div>
+            </div>
+          </div>
+
+          <!-- Слайд 2 -->
+          <div class="slide">
+            <div class="slide-img">
+              <div class="slide-placeholder"><i class="fa-solid fa-image fa-3x"></i></div>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Конференція</span>
+              <div class="slide-title">Конференція «СМА: Разом до перемоги» 2024</div>
+              <div class="slide-date"><i class="fa-regular fa-calendar"></i> Червень 2024</div>
+            </div>
+          </div>
+
+          <!-- Слайд 3 -->
+          <div class="slide">
+            <div class="slide-img">
+              <div class="slide-placeholder"><i class="fa-solid fa-image fa-3x"></i></div>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Адвокація</span>
+              <div class="slide-title">Зустріч з комітетом ВРУ з охорони здоров'я</div>
+              <div class="slide-date"><i class="fa-regular fa-calendar"></i> Лютий 2025</div>
+            </div>
+          </div>
+
+          <!-- Слайд 4 -->
+          <div class="slide">
+            <div class="slide-img">
+              <div class="slide-placeholder"><i class="fa-solid fa-image fa-3x"></i></div>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Спільнота</span>
+              <div class="slide-title">Зустріч родин — Київ 2024</div>
+              <div class="slide-date"><i class="fa-regular fa-calendar"></i> Жовтень 2024</div>
+            </div>
+          </div>
+
+          <!-- Слайд 5 -->
+          <div class="slide">
+            <div class="slide-img">
+              <div class="slide-placeholder"><i class="fa-solid fa-image fa-3x"></i></div>
+            </div>
+            <div class="slide-caption">
+              <span class="slide-cat">Міжнародне</span>
+              <div class="slide-title">SMA Europe Conference — Варшава 2024</div>
+              <div class="slide-date"><i class="fa-regular fa-calendar"></i> Вересень 2024</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Стрілки -->
+        <button class="slider-arrow slider-arrow--prev" id="sliderPrev" aria-label="Попередній">
+          <i class="fa-solid fa-chevron-left"></i>
+        </button>
+        <button class="slider-arrow slider-arrow--next" id="sliderNext" aria-label="Наступний">
+          <i class="fa-solid fa-chevron-right"></i>
+        </button>
+
+        <!-- Точки -->
+        <div class="slider-dots" id="sliderDots"></div>
+      </div>
+    </section>
+
+    <!-- GALLERY GRID -->
+    <section class="gallery-page-section">
+      <div class="container">
+
+        <div class="gallery-filters" data-aos>
+          <button class="filter-btn active" data-filter="all">Всі фото</button>
+          <button class="filter-btn" data-filter="events">Події</button>
+          <button class="filter-btn" data-filter="conferences">Конференції</button>
+          <button class="filter-btn" data-filter="advocacy">Адвокація</button>
+          <button class="filter-btn" data-filter="community">Спільнота</button>
+        </div>
+
+        <div class="gallery-masonry" id="galleryGrid">
+
+          <div class="gallery-cell gallery-cell--wide" data-category="events" data-aos>
+            <div class="gallery-cell-inner">
+              <!-- <img src="images/gallery/photo-1.jpg" alt="..."> -->
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 1<br><small>Подія</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="День рідкісних захворювань 2025" data-idx="0"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">День рідкісних захворювань · 2025</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="conferences" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 2<br><small>Конференція</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Конференція 2024" data-idx="1"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Конференція · 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="community" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 3<br><small>Спільнота</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Наша спільнота" data-idx="2"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Наша спільнота · 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="advocacy" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 4<br><small>Адвокація</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Зустріч з МОЗ" data-idx="3"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Зустріч з МОЗ · 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell gallery-cell--wide" data-category="events" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 5<br><small>Подія</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Захід 2024" data-idx="4"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Захід · 2024</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="conferences" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 6<br><small>Конференція</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Виступ 2023" data-idx="5"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Виступ · 2023</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="community" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 7</span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Зустріч 2023" data-idx="6"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Зустріч · 2023</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="advocacy" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 8</span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Парламент 2023" data-idx="7"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Парламент · 2023</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="events" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 9</span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Захід 2023" data-idx="8"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Захід · 2023</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell gallery-cell--wide" data-category="conferences" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 10<br><small>Загальне фото</small></span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Конференція СМА Разом 2022" data-idx="9"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Конференція СМА Разом · 2022</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="community" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 11</span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Спільнота 2022" data-idx="10"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Спільнота · 2022</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-cell" data-category="events" data-aos>
+            <div class="gallery-cell-inner">
+              <div class="gallery-placeholder"><i class="fa-solid fa-image fa-2x"></i><span>Фото 12</span></div>
+              <div class="gallery-overlay">
+                <button class="gallery-zoom-btn" data-title="Захід 2022" data-idx="11"><i class="fa-solid fa-magnifying-glass-plus"></i></button>
+                <div class="gallery-caption">Захід · 2022</div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="gallery-no-results" id="noResults" style="display:none;">
+          <i class="fa-regular fa-face-sad-tear fa-2x"></i>
+          <p>Фото за цією категорією не знайдено.</p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lightbox-prev" id="lightboxPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lightbox-next" id="lightboxNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lightbox-content">
+      <div class="lightbox-img-wrap" id="lightboxImgWrap"></div>
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <!-- FOOTER — як на index.html -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="СМА Разом" />
+            <div class="footer-logo-name">СМА Разом</div>
+          </div>
+          <p class="footer-desc">
+            Громадська організація, що підтримує пацієнтів зі спінальною м'язовою атрофією та їхні родини в Україні. Ми поруч кожен день.
+          </p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Навігація</div>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="sma.html">Що таке СМА</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="useful.html">Корисне</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <div class="footer-col-title">Контакти</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@sma-razom.org.ua">info@sma-razom.org.ua</a></li>
+            <li><a href="tel:+380441234567">+38 (044) 123-45-67</a></li>
+            <li style="color: rgba(255,255,255,0.35);">м. Київ</li>
+            <li style="color: rgba(255,255,255,0.35);">Пн–Пт: 09:00–18:00</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <span>© 2024–2025 СМА Разом. Всі права захищені.</span>
+        <div style="display: flex; gap: 20px;">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Публічна оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Вгору"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script src="js/gallery.js"></script>
+</body>
+</html>

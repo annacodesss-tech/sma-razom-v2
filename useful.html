@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Корисні матеріали про СМА — відеолекції, наукові статті, посібники, вебінари та документи для пацієнтів і лікарів." />
+  <title>Корисне — СМА Разом</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="css/useful.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="СМА Разом" />
+          <div class="nav-logo-text">
+            СМА Разом
+            <span>Громадська організація</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="sma.html">Що таке СМА</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="gallery.html">Фотогалерея</a></li>
+          <li><a href="useful.html" class="current">Корисне</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+        <div class="social-links">
+          <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+          <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+        </div>
+        <button class="nav-burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <div class="social-links">
+      <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+      <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    </div>
+    <a href="about.html">Про нас</a>
+    <a href="sma.html">Що таке СМА</a>
+    <a href="news.html">Новини</a>
+    <a href="gallery.html">Фотогалерея</a>
+    <a href="useful.html">Корисне</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="index.html">Головна</a>
+            <span><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            <span>Корисне</span>
+          </div>
+          <div class="page-hero-tag">
+            <i class="fa-solid fa-graduation-cap"></i>&nbsp; Навчання та ресурси
+          </div>
+          <h1>Корисні матеріали</h1>
+          <p class="page-hero-lead">
+            Відеолекції, наукові статті, посібники та документи — все що потрібно знати про СМА пацієнтам, родинам та лікарям. Матеріали постійно оновлюються.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- TABS NAV -->
+    <section class="useful-section">
+      <div class="container">
+
+        <div class="useful-tabs" data-aos>
+          <button class="useful-tab active" data-tab="video">
+            <i class="fa-brands fa-youtube"></i> Відео та вебінари
+          </button>
+          <button class="useful-tab" data-tab="docs">
+            <i class="fa-solid fa-file-pdf"></i> Документи та посібники
+          </button>
+          <button class="useful-tab" data-tab="science">
+            <i class="fa-solid fa-flask"></i> Наукові матеріали
+          </button>
+          <button class="useful-tab" data-tab="parents">
+            <i class="fa-solid fa-heart"></i> Для родин
+          </button>
+          <button class="useful-tab" data-tab="doctors">
+            <i class="fa-solid fa-stethoscope"></i> Для лікарів
+          </button>
+        </div>
+
+        <!-- ==========================================
+             ВІДЕО ТА ВЕБІНАРИ
+             ========================================== -->
+        <div class="useful-content active" id="tab-video">
+
+          <div class="useful-search" data-aos>
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" id="videoSearch" placeholder="Пошук відео…" />
+          </div>
+
+          <div class="useful-grid" id="videoGrid">
+
+            <div class="video-card" data-aos>
+              <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_1" target="_blank" rel="noopener" class="video-thumb-link">
+                <img src="https://img.youtube.com/vi/ВІДЕО_ID_1/hqdefault.jpg"
+                     alt="Нові підходи до лікування СМА"
+                     onerror="this.parentNode.innerHTML='<div class=\'video-thumb-placeholder\'><i class=\'fa-brands fa-youtube\'></i></div>'" />
+                <div class="video-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="video-duration">45:12</span>
+              </a>
+              <div class="video-body">
+                <span class="video-cat video-cat--webinar">Вебінар</span>
+                <h3 class="video-title">Нові підходи до лікування СМА: огляд 2024</h3>
+                <p class="video-desc">Лекція провідного невролога про актуальні методи лікування — нусінерсен, рісдиплам та генна терапія.</p>
+                <div class="video-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Грудень 2024</span>
+                  <span><i class="fa-solid fa-eye"></i> 1 240 переглядів</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_1" target="_blank" rel="noopener" class="btn btn-primary video-link">
+                  <i class="fa-brands fa-youtube"></i> Дивитися на YouTube
+                </a>
+              </div>
+            </div>
+
+            <div class="video-card" data-aos data-aos-delay="100">
+              <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_2" target="_blank" rel="noopener" class="video-thumb-link">
+                <img src="https://img.youtube.com/vi/ВІДЕО_ID_2/hqdefault.jpg"
+                     alt="Генетика СМА"
+                     onerror="this.parentNode.innerHTML='<div class=\'video-thumb-placeholder\'><i class=\'fa-brands fa-youtube\'></i></div>'" />
+                <div class="video-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="video-duration">28:40</span>
+              </a>
+              <div class="video-body">
+                <span class="video-cat video-cat--lecture">Лекція</span>
+                <h3 class="video-title">Генетика СМА: що таке SMN1 та SMN2</h3>
+                <p class="video-desc">Доступне пояснення механізму захворювання для пацієнтів та їх родин без медичної освіти.</p>
+                <div class="video-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Жовтень 2024</span>
+                  <span><i class="fa-solid fa-eye"></i> 890 переглядів</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_2" target="_blank" rel="noopener" class="btn btn-primary video-link">
+                  <i class="fa-brands fa-youtube"></i> Дивитися на YouTube
+                </a>
+              </div>
+            </div>
+
+            <div class="video-card" data-aos data-aos-delay="200">
+              <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_3" target="_blank" rel="noopener" class="video-thumb-link">
+                <img src="https://img.youtube.com/vi/ВІДЕО_ID_3/hqdefault.jpg"
+                     alt="Конференція СМА Разом 2024"
+                     onerror="this.parentNode.innerHTML='<div class=\'video-thumb-placeholder\'><i class=\'fa-brands fa-youtube\'></i></div>'" />
+                <div class="video-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="video-duration">1:12:05</span>
+              </a>
+              <div class="video-body">
+                <span class="video-cat video-cat--conference">Конференція</span>
+                <h3 class="video-title">Запис конференції СМА Разом 2024 — повна версія</h3>
+                <p class="video-desc">Виступи лікарів, пацієнтів та представників організацій з усієї України.</p>
+                <div class="video-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Червень 2024</span>
+                  <span><i class="fa-solid fa-eye"></i> 2 100 переглядів</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_3" target="_blank" rel="noopener" class="btn btn-primary video-link">
+                  <i class="fa-brands fa-youtube"></i> Дивитися на YouTube
+                </a>
+              </div>
+            </div>
+
+            <div class="video-card" data-aos>
+              <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_4" target="_blank" rel="noopener" class="video-thumb-link">
+                <img src="https://img.youtube.com/vi/ВІДЕО_ID_4/hqdefault.jpg"
+                     alt="Респіраторна підтримка при СМА"
+                     onerror="this.parentNode.innerHTML='<div class=\'video-thumb-placeholder\'><i class=\'fa-brands fa-youtube\'></i></div>'" />
+                <div class="video-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="video-duration">55:30</span>
+              </a>
+              <div class="video-body">
+                <span class="video-cat video-cat--webinar">Вебінар</span>
+                <h3 class="video-title">Респіраторна підтримка при СМА: практичний посібник</h3>
+                <p class="video-desc">Як організувати дихальну підтримку вдома, які апарати потрібні та як їх отримати.</p>
+                <div class="video-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Вересень 2024</span>
+                  <span><i class="fa-solid fa-eye"></i> 670 переглядів</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_4" target="_blank" rel="noopener" class="btn btn-primary video-link">
+                  <i class="fa-brands fa-youtube"></i> Дивитися на YouTube
+                </a>
+              </div>
+            </div>
+
+            <div class="video-card" data-aos data-aos-delay="100">
+              <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_5" target="_blank" rel="noopener" class="video-thumb-link">
+                <img src="https://img.youtube.com/vi/ВІДЕО_ID_5/hqdefault.jpg"
+                     alt="Неонатальний скринінг на СМА"
+                     onerror="this.parentNode.innerHTML='<div class=\'video-thumb-placeholder\'><i class=\'fa-brands fa-youtube\'></i></div>'" />
+                <div class="video-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="video-duration">38:15</span>
+              </a>
+              <div class="video-body">
+                <span class="video-cat video-cat--lecture">Лекція</span>
+                <h3 class="video-title">Неонатальний скринінг на СМА: чому це важливо</h3>
+                <p class="video-desc">Навіщо потрібен скринінг новонароджених та як він змінює прогноз для дитини зі СМА.</p>
+                <div class="video-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Серпень 2024</span>
+                  <span><i class="fa-solid fa-eye"></i> 540 переглядів</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_5" target="_blank" rel="noopener" class="btn btn-primary video-link">
+                  <i class="fa-brands fa-youtube"></i> Дивитися на YouTube
+                </a>
+              </div>
+            </div>
+
+            <div class="video-card" data-aos data-aos-delay="200">
+              <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_6" target="_blank" rel="noopener" class="video-thumb-link">
+                <img src="https://img.youtube.com/vi/ВІДЕО_ID_6/hqdefault.jpg"
+                     alt="Психологічна підтримка родин"
+                     onerror="this.parentNode.innerHTML='<div class=\'video-thumb-placeholder\'><i class=\'fa-brands fa-youtube\'></i></div>'" />
+                <div class="video-play-btn"><i class="fa-solid fa-play"></i></div>
+                <span class="video-duration">22:48</span>
+              </a>
+              <div class="video-body">
+                <span class="video-cat video-cat--webinar">Вебінар</span>
+                <h3 class="video-title">Психологічна підтримка родин: як говорити з дитиною про хворобу</h3>
+                <p class="video-desc">Практичні поради від психолога — як підтримати дитину та себе у складний час.</p>
+                <div class="video-meta">
+                  <span><i class="fa-regular fa-calendar"></i> Липень 2024</span>
+                  <span><i class="fa-solid fa-eye"></i> 810 переглядів</span>
+                </div>
+                <a href="https://www.youtube.com/watch?v=ВІДЕО_ID_6" target="_blank" rel="noopener" class="btn btn-primary video-link">
+                  <i class="fa-brands fa-youtube"></i> Дивитися на YouTube
+                </a>
+              </div>
+            </div>
+
+          </div><!-- /videoGrid -->
+
+          <div class="useful-no-results" id="videoNoResults" style="display:none;">
+            <i class="fa-regular fa-face-sad-tear fa-2x"></i>
+            <p>Нічого не знайдено. Спробуйте інший запит.</p>
+          </div>
+
+          <!--
+          
+          <div class="useful-more" data-aos>
+            <a href="https://www.youtube.com/@smarazom" target="_blank" class="btn btn-outline">
+              <i class="fa-brands fa-youtube"></i> Всі відео на YouTube-каналі
+            </a>
+          </div>
+        -->
+        </div>
+
+        <!-- ==========================================
+             ДОКУМЕНТИ ТА ПОСІБНИКИ
+             ========================================== -->
+        <div class="useful-content" id="tab-docs">
+          <div class="docs-grid">
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Посібник</span>
+                <h3>Путівник для батьків: перші кроки після діагнозу СМА</h3>
+                <p>Покрокова інструкція — що робити, куди звертатися, які документи оформити.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 2.4 МБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Інструкція</span>
+                <h3>Як отримати препарат за державною програмою: покрокова інструкція</h3>
+                <p>Перелік документів, строки, можливі відмови та як їх оскаржити.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 1.1 МБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2025</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--word"><i class="fa-solid fa-file-word"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Шаблон</span>
+                <h3>Зразок заяви на отримання технічних засобів реабілітації</h3>
+                <p>Готовий шаблон заяви, який можна заповнити та подати до соціальних служб.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> DOCX · 45 КБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Довідник</span>
+                <h3>Права пацієнтів зі СМА в Україні: юридичний довідник</h3>
+                <p>Законодавча база, права на лікування, освіту та соціальний захист.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 3.8 МБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Звіт</span>
+                <h3>Фінансовий звіт організації СМА Разом 2024</h3>
+                <p>Детальний звіт про надходження та використання коштів за 2024 рік.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 890 КБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2025</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--word"><i class="fa-solid fa-file-word"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Шаблон</span>
+                <h3>Шаблон звернення до НСЗУ щодо забезпечення лікуванням</h3>
+                <p>Зразок офіційного листа до Національної служби здоров'я України.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> DOCX · 38 КБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2025</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+          </div>
+        </div>
+
+        <!-- ==========================================
+             НАУКОВІ МАТЕРІАЛИ
+             ========================================== -->
+        <div class="useful-content" id="tab-science">
+          <div class="science-intro" data-aos>
+            <i class="fa-solid fa-circle-info"></i>
+            Наукові статті подані у адаптованому вигляді. Для перегляду оригінальних публікацій перейдіть за посиланням на PubMed або журнал.
+          </div>
+          <div class="science-list">
+
+            <div class="science-card" data-aos>
+              <div class="science-card-left">
+                <div class="science-tag">Генна терапія</div>
+                <div class="science-year">2024</div>
+              </div>
+              <div class="science-card-body">
+                <h3>Довгострокова ефективність онасемногену абепарвовека при СМА типу 1</h3>
+                <p class="science-authors">New England Journal of Medicine · 2024</p>
+                <p class="science-abstract">Дослідження підтверджує збереження рухових функцій у 91% пацієнтів через 5 років після одноразового введення генної терапії Zolgensma.</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="science-link">
+                  Читати на PubMed <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="science-card" data-aos>
+              <div class="science-card-left">
+                <div class="science-tag">Рісдиплам</div>
+                <div class="science-year">2024</div>
+              </div>
+              <div class="science-card-body">
+                <h3>SUNFISH дослідження: ефективність рісдиплам при СМА типів 2 та 3</h3>
+                <p class="science-authors">Lancet Neurology · 2024</p>
+                <p class="science-abstract">48-місячні дані підтверджують стабільний або покращений руховий розвиток у 76% пацієнтів на тлі терапії рісдиплам.</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="science-link">
+                  Читати на PubMed <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="science-card" data-aos>
+              <div class="science-card-left">
+                <div class="science-tag">Скринінг</div>
+                <div class="science-year">2023</div>
+              </div>
+              <div class="science-card-body">
+                <h3>Неонатальний скринінг на СМА: результати пілотної програми в Центральній Європі</h3>
+                <p class="science-authors">European Journal of Paediatric Neurology · 2023</p>
+                <p class="science-abstract">З 14 000 новонароджених виявлено 3 випадки СМА (1:4667). Всі діти розпочали лікування до появи симптомів та досягли нормального рухового розвитку.</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="science-link">
+                  Читати на PubMed <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+                </a>
+              </div>
+            </div>
+
+            <div class="science-card" data-aos>
+              <div class="science-card-left">
+                <div class="science-tag">Реабілітація</div>
+                <div class="science-year">2023</div>
+              </div>
+              <div class="science-card-body">
+                <h3>Фізична реабілітація при СМА на тлі медикаментозного лікування: систематичний огляд</h3>
+                <p class="science-authors">Journal of Neuromuscular Diseases · 2023</p>
+                <p class="science-abstract">Комбінація фармакотерапії та реабілітації дає значно кращі результати порівняно з монотерапією — особливо для пацієнтів типів 2 та 3.</p>
+                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="science-link">
+                  Читати на PubMed <i class="fa-solid fa-arrow-up-right-from-square fa-xs"></i>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ==========================================
+             ДЛЯ РОДИН
+             ========================================== -->
+        <div class="useful-content" id="tab-parents">
+          <div class="parents-grid">
+
+            <div class="resource-card" data-aos>
+              <div class="resource-icon">🧬</div>
+              <h3>Що таке СМА — простими словами</h3>
+              <p>Доступне пояснення хвороби для тих, хто щойно отримав діагноз. Без складної медичної термінології.</p>
+              <a href="sma.html" class="resource-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos data-aos-delay="100">
+              <div class="resource-icon">📋</div>
+              <h3>Чек-лист після діагнозу</h3>
+              <p>Що потрібно зробити в перші тижні: документи, лікарі, організації, куди звернутися за допомогою.</p>
+              <a href="#" class="resource-link">Завантажити PDF <i class="fa-solid fa-download fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos data-aos-delay="200">
+              <div class="resource-icon">💊</div>
+              <h3>Препарати від СМА: порівняння</h3>
+              <p>Порівняння трьох схвалених препаратів — спосіб введення, вік, доступність в Україні.</p>
+              <a href="sma.html#treatment" class="resource-link">Читати <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos>
+              <div class="resource-icon">🧠</div>
+              <h3>Психологічна підтримка</h3>
+              <p>Де знайти безкоштовну психологічну допомогу для батьків та дітей зі СМА в Україні.</p>
+              <a href="contacts.html" class="resource-link">Дізнатися <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos data-aos-delay="100">
+              <div class="resource-icon">🏫</div>
+              <h3>Освіта та інклюзія</h3>
+              <p>Права дітей зі СМА на освіту, інклюзивні школи та як добитися комфортного навчання.</p>
+              <a href="#" class="resource-link">Завантажити PDF <i class="fa-solid fa-download fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos data-aos-delay="200">
+              <div class="resource-icon">💬</div>
+              <h3>Наша спільнота у Telegram</h3>
+              <p>Приєднуйтесь до групи підтримки — родини, які проходять той же шлях, завжди готові допомогти.</p>
+              <a href="https://t.me/smarazom" target="_blank" class="resource-link">Приєднатися <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos>
+              <div class="resource-icon">🌍</div>
+              <h3>Міжнародні ресурси</h3>
+              <p>Провідні світові організації — SMA Europe, Cure SMA, SMA Foundation — та їхні матеріали.</p>
+              <a href="#" class="resource-link">Перейти <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+            </div>
+
+            <div class="resource-card" data-aos data-aos-delay="100">
+              <div class="resource-icon">⚖️</div>
+              <h3>Юридична допомога</h3>
+              <p>Безкоштовна юридична консультація для родин зі СМА — оформлення інвалідності, оскарження відмов.</p>
+              <a href="contacts.html" class="resource-link">Звернутися <i class="fa-solid fa-arrow-right fa-xs"></i></a>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- ==========================================
+             ДЛЯ ЛІКАРІВ
+             ========================================== -->
+        <div class="useful-content" id="tab-doctors">
+          <div class="doctors-intro" data-aos>
+            <div class="doctors-intro-icon"><i class="fa-solid fa-stethoscope"></i></div>
+            <div>
+              <h3>Матеріали для медичних фахівців</h3>
+              <p>Клінічні настанови, освітні програми та ресурси для неврологів, педіатрів та реабілітологів, які працюють з пацієнтами зі СМА.</p>
+            </div>
+          </div>
+          <div class="docs-grid">
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Настанова</span>
+                <h3>Клінічна настанова з діагностики та лікування СМА (Україна, 2024)</h3>
+                <p>Офіційний документ МОЗ України щодо стандартів надання медичної допомоги пацієнтам зі СМА.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 5.2 МБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Протокол</span>
+                <h3>Протокол введення нусінерсену: технічні вимоги та безпека</h3>
+                <p>Технічний посібник для неврологів та анестезіологів щодо інтратекального введення препарату.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 1.8 МБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2023</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Шкала</span>
+                <h3>Шкали оцінювання рухових функцій при СМА: HFMSE, RULM, CHOP-INTEND</h3>
+                <p>Інструкції щодо застосування стандартизованих шкал оцінки у клінічній практиці.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-file"></i> PDF · 2.1 МБ</span>
+                  <span><i class="fa-regular fa-calendar"></i> 2024</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-download"></i></div>
+            </a>
+
+            <a href="#" class="doc-card" data-aos>
+              <div class="doc-icon doc-icon--pdf"><i class="fa-solid fa-file-pdf"></i></div>
+              <div class="doc-body">
+                <span class="doc-tag">Освіта</span>
+                <h3>Онлайн-курс: «СМА від А до Я» для лікарів первинної ланки</h3>
+                <p>Безкоштовна CME-програма для підвищення кваліфікації з питань діагностики та ведення пацієнтів зі СМА.</p>
+                <div class="doc-meta">
+                  <span><i class="fa-solid fa-clock"></i> 6 годин</span>
+                  <span><i class="fa-solid fa-certificate"></i> CME-кредити</span>
+                </div>
+              </div>
+              <div class="doc-download"><i class="fa-solid fa-arrow-up-right-from-square"></i></div>
+            </a>
+
+          </div>
+
+          <div class="doctors-contact" data-aos>
+            <i class="fa-solid fa-envelope"></i>
+            <div>
+              <strong>Медичним фахівцям</strong>
+              <p>Якщо у вас є питання щодо ведення пацієнта зі СМА або ви хочете долучитися до нашої медичної мережі — напишіть нам на <a href="mailto:medical@sma-razom.org.ua">medical@sma-razom.org.ua</a></p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="СМА Разом" />
+            <div class="footer-logo-name">СМА Разом</div>
+          </div>
+          <p class="footer-desc">Громадська організація, що підтримує пацієнтів зі спінальною м'язовою атрофією та їхні родини в Україні. Ми поруч кожен день.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Навігація</div>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="sma.html">Що таке СМА</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="useful.html">Корисне</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Контакти</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@sma-razom.org.ua">info@sma-razom.org.ua</a></li>
+            <li><a href="tel:+380441234567">+38 (044) 123-45-67</a></li>
+            <li style="color:rgba(255,255,255,0.35)">м. Київ</li>
+            <li style="color:rgba(255,255,255,0.35)">Пн–Пт: 09:00–18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024–2025 СМА Разом. Всі права захищені.</span>
+        <div style="display:flex;gap:20px">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Публічна оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Вгору"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script src="js/useful.js"></script>
+</body>
+</html>

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16.png" />
+  <link rel="apple-touch-icon" href="images/apple-touch-icon.png" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Підтримайте СМА Разом — ваш донат допомагає пацієнтам зі спінальною м'язовою атрофією в Україні." />
+  <title>Як допомогти — СМА Разом</title>
+  <link rel="stylesheet" href="css/main.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="index.html" class="nav-logo">
+          <img src="images/logo.png" alt="СМА Разом" />
+          <div class="nav-logo-text">
+            СМА Разом
+            <span>Громадська організація</span>
+          </div>
+        </a>
+        <ul class="nav-links">
+          <li><a href="about.html">Про нас</a></li>
+          <li><a href="sma.html">Що таке СМА</a></li>
+          <li><a href="news.html">Новини</a></li>
+          <li><a href="donate.html" class="current">Як допомогти</a></li>
+          <li><a href="useful.html">Корисне</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+        </ul>
+        <a href="donate.html" class="btn btn-gold nav-cta">
+          <i class="fa-solid fa-heart"></i> Допомогти
+        </a>
+        <button class="nav-burger" aria-label="Меню">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+  </header>
+
+  <div class="mobile-menu">
+    <button class="mobile-menu-close">&times;</button>
+    <a href="about.html">Про нас</a>
+    <a href="sma.html">Що таке СМА</a>
+    <a href="news.html">Новини</a>
+    <a href="gallery.html">Фотогалерея</a>
+    <a href="donate.html">Як допомогти</a>
+    <a href="useful.html">Корисне</a>
+    <a href="contacts.html">Контакти</a>
+  </div>
+
+  <main>
+
+    <!-- PAGE HERO -->
+    <section class="page-hero donate-hero">
+      <div class="container">
+        <div class="page-hero-inner">
+          <div class="breadcrumb">
+            <a href="index.html">Головна</a>
+            <span><i class="fa-solid fa-chevron-right fa-xs"></i></span>
+            <span>Як допомогти</span>
+          </div>
+          <div class="page-hero-tag">
+            <i class="fa-solid fa-heart"></i>&nbsp; Підтримка
+          </div>
+          <h1>Ваша допомога<br><em>рятує життя</em></h1>
+          <p class="page-hero-lead">
+            Кожна гривня наближає нас до мети — щоб кожна дитина зі СМА в Україні мала доступ до лікування. Оберіть зручний спосіб підтримати нас.
+          </p>
+          <div class="donate-hero-stats">
+            <div class="donate-hero-stat">
+              <div class="donate-hero-stat-num" data-count="100" data-suffix="+">100+</div>
+              <div class="donate-hero-stat-label">дітей отримали лікування</div>
+            </div>
+            <div class="donate-hero-stat-divider"></div>
+            <div class="donate-hero-stat">
+              <div class="donate-hero-stat-num" data-count="500" data-suffix="+">500+</div>
+              <div class="donate-hero-stat-label">родин у спільноті</div>
+            </div>
+            <div class="donate-hero-stat-divider"></div>
+            <div class="donate-hero-stat">
+              <div class="donate-hero-stat-num" data-count="8" data-suffix=" р">8 р</div>
+              <div class="donate-hero-stat-label">системної роботи</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATE FORM + WAYS -->
+    <section class="donate-form-section">
+      <div class="container">
+        <div class="donate-layout">
+
+          <!-- DONATE WIDGET -->
+          <div class="donate-widget" data-aos>
+            <div class="donate-widget-header">
+              <h2>Зробити пожертву</h2>
+              <p>Будь-яка сума важлива — навіть невеликий внесок допомагає нам продовжувати роботу.</p>
+            </div>
+
+            <!-- Frequency -->
+            <div class="donate-frequency">
+              <button class="freq-btn active" data-freq="once">Разовий</button>
+              <button class="freq-btn" data-freq="monthly">Щомісячний</button>
+            </div>
+
+            <!-- Amount -->
+            <div class="amount-section">
+              <div class="amount-label">Оберіть суму (грн)</div>
+              <div class="amount-btns" id="amountBtns">
+                <button class="amount-btn" data-amount="100">100</button>
+                <button class="amount-btn" data-amount="200">200</button>
+                <button class="amount-btn active" data-amount="500">500</button>
+                <button class="amount-btn" data-amount="1000">1 000</button>
+                <button class="amount-btn" data-amount="2000">2 000</button>
+                <button class="amount-btn" data-amount="5000">5 000</button>
+              </div>
+              <div class="amount-custom-wrap">
+                <span class="amount-prefix">₴</span>
+                <input type="number" id="customAmount" placeholder="Інша сума" min="10" />
+              </div>
+            </div>
+
+            <!-- Impact preview -->
+            <div class="donate-impact-preview" id="impactPreview">
+              <i class="fa-solid fa-circle-check"></i>
+              <span id="impactText">500 грн — консультація юриста для однієї родини</span>
+            </div>
+
+            <!-- Pay button -->
+            <a href="#" class="btn btn-gold donate-pay-main">
+              <i class="fa-solid fa-heart"></i>
+              Задонатити <span id="payAmount">500</span> грн
+            </a>
+
+            <!-- Methods -->
+            <div class="donate-methods">
+              <span class="donate-methods-label">Способи оплати:</span>
+              <div class="donate-methods-icons">
+                <span class="method-icon"><i class="fa-brands fa-cc-visa"></i></span>
+                <span class="method-icon"><i class="fa-brands fa-cc-mastercard"></i></span>
+                <span class="method-icon method-icon--text">Privat24</span>
+                <span class="method-icon method-icon--text">Mono</span>
+                <span class="method-icon method-icon--text">Apple Pay</span>
+                <span class="method-icon method-icon--text">Google Pay</span>
+              </div>
+            </div>
+
+            <div class="donate-secure">
+              <i class="fa-solid fa-lock"></i> Безпечна транзакція · SSL-шифрування
+            </div>
+          </div>
+
+          <!-- OTHER WAYS -->
+          <div class="donate-ways-section">
+            <div class="section-tag" data-aos>Інші способи</div>
+            <h2 class="section-title" data-aos>Як ще можна допомогти</h2>
+
+            <div class="ways-list">
+              <div class="way-card" data-aos>
+                <div class="way-card-icon way-card-icon--mono"><i class="fa-solid fa-mobile-screen"></i></div>
+                <div class="way-card-body">
+                  <h3>Monobank / Privat24</h3>
+                  <p>Переказ на картку за номером телефону або реквізитами організації.</p>
+                  <div class="way-card-detail">
+                    <span class="way-card-key">Картка:</span>
+                    <span class="way-card-val">4441 1111 2222 3333</span>
+                    <button class="copy-btn" data-copy="4441111122223333" title="Копіювати">
+                      <i class="fa-solid fa-copy"></i>
+                    </button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="way-card" data-aos>
+                <div class="way-card-icon"><i class="fa-solid fa-building-columns"></i></div>
+                <div class="way-card-body">
+                  <h3>Банківський переказ</h3>
+                  <p>Для юридичних та фізичних осіб — переказ за реквізитами організації.</p>
+                  <div class="way-card-details">
+                    <div class="way-card-detail">
+                      <span class="way-card-key">ЄДРПОУ:</span>
+                      <span class="way-card-val">12345678</span>
+                    </div>
+                    <div class="way-card-detail">
+                      <span class="way-card-key">IBAN:</span>
+                      <span class="way-card-val">UA12 3456 7890 1234 5678</span>
+                      <button class="copy-btn" data-copy="UA1234567890123456789012345 6" title="Копіювати">
+                        <i class="fa-solid fa-copy"></i>
+                      </button>
+                    </div>
+                    <div class="way-card-detail">
+                      <span class="way-card-key">Банк:</span>
+                      <span class="way-card-val">АТ «Назва банку»</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="way-card" data-aos>
+                <div class="way-card-icon way-card-icon--volunteer"><i class="fa-solid fa-hands-helping"></i></div>
+                <div class="way-card-body">
+                  <h3>Волонтерська допомога</h3>
+                  <p>Ваш час та навички — теж цінний ресурс. Нам потрібні юристи, психологи, IT-фахівці та небайдужі люди.</p>
+                  <a href="contacts.html" class="btn btn-outline btn-sm">Стати волонтером</a>
+                </div>
+              </div>
+
+              <div class="way-card" data-aos>
+                <div class="way-card-icon way-card-icon--share"><i class="fa-solid fa-share-nodes"></i></div>
+                <div class="way-card-body">
+                  <h3>Поширити інформацію</h3>
+                  <p>Розкажіть про нас друзям та близьким — підписуйтесь на наші сторінки та діліться публікаціями.</p>
+                  <div class="share-social-btns">
+                    <a href="#" class="share-social-btn share-social-btn--fb" title="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="share-social-btn share-social-btn--ig" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="share-social-btn share-social-btn--tg" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="impact-section">
+      <div class="container">
+        <div class="section-center" data-aos>
+          <div class="section-tag">Прозорість</div>
+          <h2 class="section-title">На що витрачаються кошти</h2>
+          <p class="section-lead" style="margin: 0 auto;">
+            Ми відповідально ставимося до кожної гривні. Ось як розподіляються пожертви.
+          </p>
+        </div>
+
+        <div class="impact-budget-grid" data-aos>
+          <div class="impact-budget-card">
+            <div class="impact-budget-fill" style="--pct:55%; --clr: var(--blue-mid)"></div>
+            <div class="impact-budget-pct">55%</div>
+            <div class="impact-budget-icon">💊</div>
+            <h3>Медична допомога</h3>
+            <p>Допомога родинам у отриманні препаратів, аналізів та медичного обладнання.</p>
+          </div>
+          <div class="impact-budget-card">
+            <div class="impact-budget-fill" style="--pct:25%; --clr: #5B9BC8"></div>
+            <div class="impact-budget-pct">25%</div>
+            <div class="impact-budget-icon">⚖️</div>
+            <h3>Адвокація</h3>
+            <p>Юридичний захист прав пацієнтів, участь у робочих групах та конференціях.</p>
+          </div>
+          <div class="impact-budget-card">
+            <div class="impact-budget-fill" style="--pct:12%; --clr: var(--gold-dark)"></div>
+            <div class="impact-budget-pct">12%</div>
+            <div class="impact-budget-icon">📣</div>
+            <h3>Обізнаність</h3>
+            <p>Освітні матеріали, вебінари та заходи для підвищення обізнаності суспільства.</p>
+          </div>
+          <div class="impact-budget-card">
+            <div class="impact-budget-fill" style="--pct:8%; --clr: #8FA8C0"></div>
+            <div class="impact-budget-pct">8%</div>
+            <div class="impact-budget-icon">🏢</div>
+            <h3>Операційні витрати</h3>
+            <p>Адміністративні витрати, необхідні для роботи організації.</p>
+          </div>
+        </div>
+
+        <!-- Concrete amounts -->
+        <div class="impact-amounts" data-aos>
+          <div class="section-tag" style="margin-bottom:28px; margin-top:72px;">Конкретна допомога</div>
+          <div class="impact-amounts-grid">
+            <div class="impact-amount-card">
+              <div class="impact-amount-num">100 ₴</div>
+              <div class="impact-amount-desc">Інформаційні матеріали для родини</div>
+            </div>
+            <div class="impact-amount-card">
+              <div class="impact-amount-num">300 ₴</div>
+              <div class="impact-amount-desc">Участь фахівця у вебінарі для батьків</div>
+            </div>
+            <div class="impact-amount-card impact-amount-card--featured">
+              <div class="impact-amount-num">500 ₴</div>
+              <div class="impact-amount-desc">Консультація юриста для родини</div>
+            </div>
+            <div class="impact-amount-card">
+              <div class="impact-amount-num">1 000 ₴</div>
+              <div class="impact-amount-desc">Психологічна підтримка родини на місяць</div>
+            </div>
+            <div class="impact-amount-card">
+              <div class="impact-amount-num">5 000 ₴</div>
+              <div class="impact-amount-desc">Генетичний аналіз для встановлення діагнозу</div>
+            </div>
+            <div class="impact-amount-card">
+              <div class="impact-amount-num">10 000 ₴</div>
+              <div class="impact-amount-desc">Участь делегата у міжнародній конференції</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="trust-section">
+      <div class="container">
+        <div class="trust-inner" data-aos>
+          <div class="trust-header">
+            <div class="section-tag">Довіра</div>
+            <h2 class="section-title">Чому нам можна довіряти</h2>
+          </div>
+          <div class="trust-grid">
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-file-contract"></i></div>
+              <div>
+                <div class="trust-title">Офіційна реєстрація</div>
+                <div class="trust-text">Зареєстровані як ГО в Міністерстві юстиції України з 2016 року.</div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-chart-pie"></i></div>
+              <div>
+                <div class="trust-title">Фінансова звітність</div>
+                <div class="trust-text">Щороку публікуємо детальний звіт про використання коштів. <a href="#">Звіт 2024 →</a></div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-globe"></i></div>
+              <div>
+                <div class="trust-title">Міжнародне членство</div>
+                <div class="trust-text">Члени European SMA Alliance та SMA Europe.</div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-shield-halved"></i></div>
+              <div>
+                <div class="trust-title">Захист даних</div>
+                <div class="trust-text">Платіжна інформація захищена SSL-шифруванням згідно з GDPR.</div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-users"></i></div>
+              <div>
+                <div class="trust-title">Контроль спільноти</div>
+                <div class="trust-text">Наглядова рада складається з представників родин пацієнтів.</div>
+              </div>
+            </div>
+            <div class="trust-item">
+              <div class="trust-icon"><i class="fa-solid fa-award"></i></div>
+              <div>
+                <div class="trust-title">Визнання</div>
+                <div class="trust-text">Подяки від МОЗ України та відзнаки міжнародних організацій.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="donate-cta">
+      <div class="container">
+        <div class="donate-cta-inner" data-aos>
+          <div class="donate-cta-text">
+            <h2>Ще не вирішили? <em>Почніть з малого</em></h2>
+            <p>Навіть 100 гривень на місяць — це реальна допомога реальним людям. Підпишіться на щомісячний донат і разом зробимо більше.</p>
+          </div>
+          <div class="donate-cta-actions">
+            <a href="#" class="btn btn-gold" onclick="window.scrollTo({top:0,behavior:'smooth'});return false;">
+              <i class="fa-solid fa-heart"></i> Задонатити зараз
+            </a>
+            <a href="contacts.html" class="btn btn-white">Поставити питання</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <img src="images/logo.png" alt="СМА Разом" />
+            <div class="footer-logo-name">СМА Разом</div>
+          </div>
+          <p class="footer-desc">Громадська організація, що підтримує пацієнтів зі спінальною м'язовою атрофією та їхні родини в Україні.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <div>
+          <div class="footer-col-title">Навігація</div>
+          <ul class="footer-links">
+            <li><a href="about.html">Про нас</a></li>
+            <li><a href="sma.html">Що таке СМА</a></li>
+            <li><a href="news.html">Новини</a></li>
+            <li><a href="gallery.html">Фотогалерея</a></li>
+            <li><a href="useful.html">Корисне</a></li>
+            <li><a href="contacts.html">Контакти</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Допомога</div>
+          <ul class="footer-links">
+            <li><a href="donate.html">Задонатити</a></li>
+            <li><a href="contacts.html">Стати волонтером</a></li>
+            <li><a href="#">Партнерство</a></li>
+            <li><a href="#">Для ЗМІ</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Контакти</div>
+          <ul class="footer-links">
+            <li><a href="mailto:info@sma-razom.org.ua">info@sma-razom.org.ua</a></li>
+            <li><a href="tel:+380441234567">+38 (044) 123-45-67</a></li>
+            <li style="color:rgba(255,255,255,0.35)">м. Київ</li>
+            <li style="color:rgba(255,255,255,0.35)">Пн–Пт: 09:00–18:00</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2024–2025 СМА Разом. Всі права захищені.</span>
+        <div style="display:flex;gap:20px">
+          <a href="#">Політика конфіденційності</a>
+          <a href="#">Публічна оферта</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Вгору"><i class="fa-solid fa-arrow-up"></i></button>
+  <script src="js/main.js"></script>
+  <script ></script>
+</body>
+</html>
